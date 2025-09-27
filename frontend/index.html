@@ -680,7 +680,8 @@
         // YouTube 下载器类
         class YouTubeDownloader {
             constructor() {
-                this.baseUrl = 'http://localhost:5261';
+                // 使用当前域名作为基础URL，这样在任何环境下都能正常工作
+                this.baseUrl = window.location.origin;
                 this.currentTaskId = null;
                 this.progressInterval = null;
             }
