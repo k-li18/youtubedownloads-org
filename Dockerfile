@@ -34,6 +34,9 @@ RUN mkdir -p /app/downloads /app/logs && \
 # Copy the published application
 COPY --from=build /app/publish .
 
+# Copy frontend files to wwwroot
+COPY frontend/ ./wwwroot/
+
 # Set environment variables
 ENV ASPNETCORE_ENVIRONMENT=Production
 ENV ASPNETCORE_URLS=http://+:8080

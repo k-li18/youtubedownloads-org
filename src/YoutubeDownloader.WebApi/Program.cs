@@ -109,7 +109,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseSerilogRequestLogging();
 
-app.UseHttpsRedirection();
+// Configure static files for frontend
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+// Only use HTTPS redirection in development (Railway handles SSL termination)
+if (app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
 
 app.UseCors("AllowAll");
 
