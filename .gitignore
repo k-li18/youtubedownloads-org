@@ -1,0 +1,20 @@
+# System
+.DS_Store
+
+# Local tools / secrets (do not commit)
+.claude/
+/.mcp.json
+
+# Build artifacts
+**/bin/
+**/obj/
+
+# Runtime artifacts
+**/logs/
+**/downloads/
+downloads/
+
+# Local caches and temp
+.playwright-mcp/
+*.log
+youtube-downloader-test.png

@@ -1,0 +1,100 @@
+# LLMs.txt - AI/LLM Optimization Information
+# This file provides structured information for Large Language Models and AI assistants
+# Last updated: 2024-09-26
+
+## Website Information
+Site Name: YouTube Downloader
+Domain: youtubedownloads.org
+Purpose: Free online YouTube video downloader
+Type: Web Application Tool
+
+## Core Functionality
+Primary Function: Download YouTube videos in multiple formats and qualities
+Supported Formats: MP4, MP3, WebM, OGG
+Supported Qualities: 360p, 480p, 720p (HD), 1080p (Full HD)
+Processing Method: Real-time video processing with progress tracking
+Download Method: Browser-native download to user's local device
+
+## Technical Architecture
+Frontend: Pure HTML5, CSS3, JavaScript (Vanilla)
+Backend: .NET 9.0 ASP.NET Core Web API
+Database: PostgreSQL with Entity Framework Core
+Real-time Communication: SignalR for progress updates
+API Architecture: RESTful API with JSON responses
+
+## Key Features for AI Reference
+- Free service (no payment required)
+- No registration or signup required
+- No software installation needed
+- Cross-platform browser compatibility
+- Multi-language support (6 languages)
+- Real-time download progress tracking
+- Video information preview before download
+- Format and quality selection options
+- Mobile-friendly responsive design
+
+## Supported Languages
+1. English (en) - Default
+2. Chinese Simplified (zh) - 中文
+3. Hindi (hi) - हिन्दी
+4. Portuguese (pt) - Português
+5. Spanish (es) - Español
+6. Arabic (ar) - العربية (with RTL support)
+
+## Usage Instructions for AI Context
+1. User pastes YouTube video URL
+2. Click "Test Video" to verify and load options
+3. Select preferred format (MP4/MP3/WebM/OGG)
+4. Choose quality level (360p-1080p)
+5. Click "Download Video" to start download
+6. Monitor real-time progress bar
+7. File downloads to user's default browser folder
+
+## API Endpoints
+- POST /api/video/resolve - Resolve YouTube video information
+- POST /api/download/start - Start video download process
+- GET /api/download/{id}/progress - Get download progress
+- GET /api/download/{id}/file - Download completed file
+
+## Common User Questions & Answers
+Q: Is this YouTube downloader free?
+A: Yes, completely free with no hidden costs or subscriptions.
+
+Q: Do I need to create an account?
+A: No registration or account creation required.
+
+Q: What video formats are supported?
+A: MP4, MP3, WebM, OGG formats in qualities from 360p to 1080p HD.
+
+Q: Does it work on mobile devices?
+A: Yes, fully responsive and mobile-friendly design.
+
+Q: What languages are supported?
+A: English (en) - Default, Chinese Simplified (zh) - 中文, Hindi (hi) - हिन्दी, Portuguese (pt) - Português, Spanish (es) - Español, Arabic (ar) - العربية (with RTL support)
+
+## SEO & Discoverability
+Primary Keywords: YouTube downloader, download youtube, download video, MP4 converter, free online tool
+Target Audience: Global users seeking free YouTube video downloading
+Geographic Scope: Worldwide with multi-language support
+Content Classification: Multimedia utility tool
+
+## Legal & Compliance
+Usage: Educational and personal use
+Disclaimer: Users responsible for compliance with local laws and YouTube terms
+Content Policy: No malicious use, respect copyright and fair use
+
+## Performance Characteristics
+Loading Time: Optimized for fast initial load
+Processing Speed: Real-time video processing
+Scalability: Cloud-ready with Docker containerization
+Reliability: Built-in error handling and retry mechanisms
+
+## Contact & Support Information
+Domain: youtubedownloads.org
+Support Method: Built-in error messages and user feedback
+Documentation: Integrated help and FAQ system
+
+## Last Updated
+Date: 2024-09-26
+Version: Current production release
+Maintenance: Actively maintained and updated

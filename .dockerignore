@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+.dockerignore
+
+# System
+.DS_Store
+
+# Local tools / secrets
+.claude/
+.mcp.json
+
+# Build artifacts
+**/bin/
+**/obj/
+
+# Runtime artifacts (logs, downloaded files)
+**/logs/
+**/downloads/
+downloads/
+
+# Tests and local scripts (not needed in API image)
+src/YoutubeDownloader.Tests/
+docker-compose.dev.yml
+playwright-test.js
+test_download.py
+
+# Docs not required in image
+SEO.md
+CLAUDE.md
+
+# Local caches
+.playwright-mcp/
+backend.run*.log
+frontend.run*.log
+

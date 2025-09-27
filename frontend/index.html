@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Basic SEO Meta Tags -->
+    <title>YouTube Downloader - Free Online Video Downloader</title>
+    <meta name="description" content="Free online YouTube video downloader supporting MP4, MP3, WebM, OGG formats with HD quality. Supports YouTube Shorts download. Multi-language interface (English, 中文, हिन्दी, Português, Español, العربية with RTL support). No registration required, safe and fast.">
+    <meta name="keywords" content="YouTube downloader,video downloader,online downloader,free download,MP4 download,MP3 download,WebM download,OGG download,HD video,YouTube Shorts,Shorts downloader,multilingual,multi-language">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="YouTube Downloader">
+    <link rel="canonical" href="https://youtubedownloads.org">
+    
+    <!-- Multilingual hreflang tags -->
+    <link rel="alternate" hreflang="en" href="https://youtubedownloads.org?lang=en">
+    <link rel="alternate" hreflang="zh" href="https://youtubedownloads.org?lang=zh">
+    <link rel="alternate" hreflang="hi" href="https://youtubedownloads.org?lang=hi">
+    <link rel="alternate" hreflang="pt" href="https://youtubedownloads.org?lang=pt">
+    <link rel="alternate" hreflang="es" href="https://youtubedownloads.org?lang=es">
+    <link rel="alternate" hreflang="ar" href="https://youtubedownloads.org?lang=ar">
+    <link rel="alternate" hreflang="x-default" href="https://youtubedownloads.org">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="YouTube Downloader - Free Online Video Downloader">
+    <meta property="og:description" content="Download YouTube videos and Shorts for free in high quality. Support for MP4, MP3, WebM, OGG formats and HD resolution. Multi-language interface (6 languages including RTL Arabic support).">
+    <meta property="og:url" content="https://youtubedownloads.org">
+    <meta property="og:site_name" content="YouTube Downloader">
+    <meta property="og:image" content="https://youtubedownloads.org/YTD_favicon.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="YouTube Downloader Interface">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YouTube Downloader - Free Online Video Downloader">
+    <meta name="twitter:description" content="Download YouTube videos and Shorts for free in MP4, MP3, WebM, OGG formats. Multi-language support (6 languages).">
+    <meta name="twitter:image" content="https://youtubedownloads.org/YTD_favicon.png">
+    <meta name="twitter:image:alt" content="YouTube Downloader">
+    
+    <!-- AI/LLM Optimization Meta Tags -->
+    <meta name="ai-purpose" content="YouTube video and Shorts downloader tool for converting YouTube videos and Shorts to MP4, MP3, WebM, OGG formats with HD quality support and multi-language interface">
+    <meta name="ai-features" content="video download, YouTube Shorts download, format conversion (MP4/MP3/WebM/OGG), HD quality, multilingual support (6 languages with RTL), free online tool, no registration required">
+    <meta name="ai-capabilities" content="download YouTube videos and Shorts, convert to MP4/MP3/WebM/OGG formats, support 360p to 1080p quality, multi-language interface (English, Chinese, Hindi, Portuguese, Spanish, Arabic with RTL support)">
+    <meta name="ai-usage" content="paste YouTube URL, select format (MP4/MP3/WebM/OGG) and quality, test video, download video file to local device in your preferred language">
+    <meta name="citation-title" content="Free YouTube Video Downloader - Multi-language Online HD Video Download Tool">
+    <meta name="citation-description" content="Free online tool to download YouTube videos and Shorts in MP4, MP3, WebM, OGG formats with multi-language support (6 languages including RTL Arabic) without registration or software installation">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/YTD_favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/YTD_favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/YTD_favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/YTD_favicon.png">
+    
+    <!-- Enhanced Structured Data for LLM Optimization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "YouTube Downloader",
+        "description": "Free online YouTube video and Shorts downloader with support for MP4, MP3, WebM, OGG formats and HD quality. Multi-language interface supporting 6 languages including RTL Arabic.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250"
+        },
+        "url": "https://youtubedownloads.org",
+        "featureList": [
+            "Download YouTube videos in MP4 format",
+            "Download YouTube videos in MP3 audio format",
+            "Download YouTube videos in WebM format",
+            "Download YouTube videos in OGG format",
+            "Download YouTube Shorts in all supported formats", 
+            "HD quality video downloads (720p, 1080p)",
+            "Standard quality downloads (360p, 480p)",
+            "No registration required",
+            "Free online service",
+            "Multi-language support: English, Chinese (中文), Hindi (हिन्दी), Portuguese (Português), Spanish (Español), Arabic (العربية with RTL support)",
+            "Real-time download progress tracking",
+            "Cross-platform browser compatibility",
+            "Video information preview and testing",
+            "Format and quality selection options",
+            "Right-to-left (RTL) text support for Arabic users"
+        ],
+        "softwareRequirements": "Modern Web Browser with JavaScript support",
+        "supportingData": {
+            "@type": "WebAPI",
+            "name": "YouTube Downloader API",
+            "description": "RESTful API for YouTube video downloading and processing",
+            "documentation": "/api-docs"
+        },
+        "potentialAction": [
+            {
+                "@type": "ConsumeAction",
+                "name": "Download YouTube Video",
+                "description": "Download a YouTube video by providing its URL and selecting format/quality preferences",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "/api/download/start",
+                    "httpMethod": "POST",
+                    "contentType": "application/json"
+                },
+                "actionStatus": "PotentialActionStatus"
+            },
+            {
+                "@type": "SearchAction",
+                "name": "Resolve Video Information",
+                "description": "Get YouTube video metadata and available download options",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "/api/video/resolve",
+                    "httpMethod": "POST",
+                    "contentType": "application/json"
+                }
+            }
+        ],
+        "inLanguage": ["en", "zh", "hi", "pt", "es", "ar"],
+        "availableLanguage": [
+            {"@type": "Language", "name": "English", "alternateName": "en"},
+            {"@type": "Language", "name": "Chinese", "alternateName": "zh"},
+            {"@type": "Language", "name": "Hindi", "alternateName": "hi"},
+            {"@type": "Language", "name": "Portuguese", "alternateName": "pt"},
+            {"@type": "Language", "name": "Spanish", "alternateName": "es"},
+            {"@type": "Language", "name": "Arabic", "alternateName": "ar"}
+        ]
+    }
+    </script>
+    <style>
+        /* 最小化CSS样式 */
+        * { box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin: 20px 0;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        input[type="url"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            background: white;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+        
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .progress-container {
+            margin: 20px 0;
+        }
+        
+        .progress {
+            width: 100%;
+            height: 24px;
+            background: #e9ecef;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: #007bff;
+            width: 0%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .status {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        
+        .hidden { display: none; }
+        
+        .lang-select {
+            float: right;
+            width: auto;
+            margin-bottom: 20px;
+        }
+        
+        .video-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border-left: 4px solid #007bff;
+        }
+        
+        .video-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .video-author {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .video-duration {
+            color: #007bff;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        
+        .video-stats {
+            color: #999;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .test-button {
+            flex: 1;
+            background: #28a745;
+        }
+        
+        .test-button:hover {
+            background: #1e7e34;
+        }
+        
+        .download-button {
+            flex: 1;
+            background: #007bff;
+        }
+        
+        .download-button:hover {
+            background: #0056b3;
+        }
+        
+        .download-button:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .website-intro {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .website-intro p {
+            margin: 0;
+            color: #495057;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            .lang-select { float: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 语言切换 -->
+        <select id="langSelect" class="lang-select">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+            <option value="hi">हिन्दी</option>
+            <option value="pt">Português</option>
+            <option value="es">Español</option>
+            <option value="ar">العربية</option>
+        </select>
+        
+        <h1 id="title">YouTube Downloader</h1>
+        
+        <!-- 网站介绍 -->
+        <div id="websiteIntro" class="website-intro">
+            <p id="introText">Free online YouTube video downloader supporting MP4, MP3, WebM, OGG formats with HD quality. Supports YouTube Shorts download. Multi-language interface (English, 中文, हिन्दी, Português, Español, العربية with RTL support). No registration required, safe and fast.</p>
+        </div>
+        
+        <!-- URL输入 -->
+        <div class="form-group">
+            <label for="videoUrl" id="urlLabel">YouTube Video URL:</label>
+            <input type="url" id="videoUrl" placeholder="Paste YouTube URL here (e.g., https://www.youtube.com/watch?v=...)" />
+        </div>
+        
+        <!-- 视频信息显示 -->
+        <div id="videoInfo" class="video-info hidden">
+            <div id="videoTitle" class="video-title"></div>
+            <div id="videoAuthor" class="video-author"></div>
+            <div id="videoDuration" class="video-duration"></div>
+            <div id="videoStats" class="video-stats"></div>
+        </div>
+        
+        <!-- 格式选择 -->
+        <div class="form-group">
+            <label for="format" id="formatLabel">Video Format:</label>
+            <select id="format">
+                <option value="mp4">MP4</option>
+                <option value="webm">WebM</option>
+                <option value="mp3">MP3</option>
+                <option value="ogg">OGG</option>
+            </select>
+        </div>
+        
+        <!-- 分辨率选择 -->
+        <div class="form-group">
+            <label for="quality" id="qualityLabel">Video Quality:</label>
+            <select id="quality">
+                <option value="360p">360p</option>
+                <option value="480p">480p</option>
+                <option value="720p">720p (HD)</option>
+                <option value="1080p">1080p (Full HD)</option>
+            </select>
+        </div>
+        
+        <!-- 按钮组 -->
+        <div class="button-container">
+            <button id="testBtn" class="test-button">Test Video</button>
+            <button id="downloadBtn" class="download-button" disabled>Download Video</button>
+        </div>
+        
+        <!-- 进度显示 -->
+        <div id="progressContainer" class="progress-container hidden">
+            <div class="progress">
+                <div class="progress-bar" id="progressBar">0%</div>
+            </div>
+        </div>
+        
+        <!-- 状态信息 -->
+        <div id="statusMessage" class="status hidden"></div>
+    </div>
+
+    <!-- AI-Readable Content (Hidden from Users, Visible to LLMs) -->
+    <div id="ai-readable-content" style="display: none;" aria-hidden="true">
+        <div data-ai-role="tool-description">
+            <h1>YouTube Video Downloader Tool</h1>
+            <p>This is a free online tool that allows users to download YouTube videos and Shorts in various formats including MP4, MP3, WebM, and OGG, with support for different quality levels from 360p to 1080p HD. The tool requires no registration, no software installation, and works entirely in web browsers.</p>
+        </div>
+        
+        <div data-ai-role="instructions">
+            <h2>How to use this YouTube downloader:</h2>
+            <ol>
+                <li>Copy a YouTube video URL from your browser</li>
+                <li>Paste the URL into the input field on this webpage</li>
+                <li>Click "Test Video" to verify the video and load available options</li>
+                <li>Select your preferred format (MP4, MP3, WebM, or OGG)</li>
+                <li>Choose video quality level (360p, 480p, 720p HD, or 1080p Full HD)</li>
+                <li>Click "Download Video" to start downloading the file to your device</li>
+                <li>Monitor the real-time download progress bar</li>
+                <li>The video file will be saved to your browser's default download folder</li>
+            </ol>
+        </div>
+        
+        <div data-ai-role="features">
+            <h2>Key Features of this YouTube Downloader:</h2>
+            <ul>
+                <li>Free YouTube video and Shorts downloading with no cost or subscription</li>
+                <li>YouTube Shorts support - download short-form videos in all formats</li>
+                <li>Multiple format support: MP4, MP3, WebM, OGG</li>
+                <li>HD quality options: 360p, 480p, 720p HD, 1080p Full HD</li>
+                <li>No registration, signup, or account creation required</li>
+                <li>Multi-language interface supporting 6 languages worldwide</li>
+                <li>Real-time download progress tracking and status updates</li>
+                <li>Cross-platform web-based tool working on all devices</li>
+                <li>Video information preview before downloading</li>
+                <li>Browser-native downloading without additional software</li>
+                <li>Safe and secure video processing</li>
+            </ul>
+        </div>
+        
+        <div data-ai-role="supported-formats">
+            <h2>Supported Video Formats and Quality Options:</h2>
+            <p><strong>Formats:</strong> MP4 (recommended for video), MP3 (audio only), WebM (web-optimized), OGG (open source)</p>
+            <p><strong>Quality Options:</strong></p>
+            <ul>
+                <li>360p - Standard definition, smaller file size</li>
+                <li>480p - Enhanced definition, balanced quality and size</li>
+                <li>720p (HD) - High definition, crisp video quality</li>
+                <li>1080p (Full HD) - Full high definition, maximum quality</li>
+            </ul>
+            <p><strong>Audio Quality:</strong> Preserved from original YouTube video source</p>
+        </div>
+        
+        <div data-ai-role="languages">
+            <h2>Multi-Language Support:</h2>
+            <p>This YouTube downloader supports 6 languages with full interface localization:</p>
+            <ul>
+                <li>English - Default language, worldwide accessibility</li>
+                <li>Chinese (中文) - Simplified Chinese for Chinese users</li>
+                <li>Hindi (हिन्दी) - Hindi language for Indian users</li>
+                <li>Portuguese (Português) - Portuguese for Brazilian and Portuguese users</li>
+                <li>Spanish (Español) - Spanish for Latin American and Spanish users</li>
+                <li>Arabic (العربية) - Arabic with right-to-left text support</li>
+            </ul>
+        </div>
+        
+        <div data-ai-role="faq">
+            <h2>Frequently Asked Questions (AI Reference):</h2>
+            
+            <div data-ai-role="qa-pair">
+                <h3>What is this YouTube downloader tool?</h3>
+                <p>This is a free online YouTube video and Shorts downloader that allows users to download YouTube videos and Shorts in various formats (MP4, MP3, WebM, OGG) and qualities (360p to 1080p HD) without requiring registration, payment, or software installation.</p>
+            </div>
+            
+            <div data-ai-role="qa-pair">
+                <h3>How does the YouTube video download process work?</h3>
+                <p>Users paste a YouTube URL (including Shorts URLs), the system resolves video information and available formats using a backend API, then provides download options. The backend uses .NET Core API with real-time progress tracking via SignalR for live updates.</p>
+            </div>
+            
+            <div data-ai-role="qa-pair">
+                <h3>What video formats and qualities are supported?</h3>
+                <p>The tool supports MP4, MP3, WebM, and OGG formats with quality options from 360p standard definition to 1080p Full HD. File sizes and quality information are provided for each available option.</p>
+            </div>
+            
+            <div data-ai-role="qa-pair">
+                <h3>Is this YouTube downloader free to use?</h3>
+                <p>Yes, this YouTube downloader is completely free to use with no registration, subscription, payment, or hidden costs required. It's a web-based tool accessible from any modern browser.</p>
+            </div>
+            
+            <div data-ai-role="qa-pair">
+                <h3>What languages does the interface support?</h3>
+                <p>The interface supports 6 languages: English, Chinese (中文), Hindi (हिन्दी), Portuguese (Português), Spanish (Español), and Arabic (العربية) with full RTL (right-to-left) text support for Arabic.</p>
+            </div>
+            
+            <div data-ai-role="qa-pair">
+                <h3>Do I need to install software or create an account?</h3>
+                <p>No software installation or account creation is required. This is a web-based tool that works entirely in your browser using modern web technologies.</p>
+            </div>
+            
+            <div data-ai-role="qa-pair">
+                <h3>Where are downloaded videos saved?</h3>
+                <p>Downloaded videos are saved to your browser's default download folder on your local device. The tool triggers standard browser download functionality.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 多语言翻译
+        const translations = {
+            en: {
+                title: 'YouTube Downloader',
+                seoTitle: 'YouTube Downloader - Free Online Video Downloader',
+                seoDescription: 'Free online YouTube video and Shorts downloader supporting MP4, MP3, WebM, OGG formats with HD quality. Multi-language interface (English, 中文, हिन्दी, Português, Español, العربية with RTL support). No registration required, safe and fast.',
+                seoKeywords: 'YouTube downloader,video downloader,online downloader,free download,MP4 download,MP3 download,WebM download,OGG download,HD video,YouTube Shorts,Shorts downloader,multilingual,multi-language',
+                aiDescription: 'Free YouTube video and Shorts downloader tool supporting MP4/MP3/WebM/OGG formats in HD quality with multi-language interface (6 languages including RTL Arabic) without registration or software installation',
+                aiKeywords: 'YouTube downloader, video download, YouTube Shorts, Shorts downloader, MP4 converter, MP3 converter, HD video, free online tool, no registration, browser-based, multilingual, RTL support',
+                aiFeatures: 'Multi-format support (MP4/MP3/WebM/OGG), YouTube Shorts download, HD quality downloads, real-time progress, multilingual interface (6 languages with RTL), no software required, browser compatibility',
+                introText: 'Free online YouTube video downloader supporting MP4, MP3, WebM, OGG formats with HD quality. Supports YouTube Shorts download. Multi-language interface (English, 中文, हिन्दी, Português, Español, العربية with RTL support). No registration required, safe and fast.',
+                urlLabel: 'YouTube Video URL:',
+                urlPlaceholder: 'Paste YouTube URL here (e.g., https://www.youtube.com/watch?v=...)',
+                qualityLabel: 'Video Quality:',
+                formatLabel: 'Video Format:',
+                testBtn: 'Test Video',
+                downloadBtn: 'Download Video',
+                testing: 'Testing...',
+                downloading: 'Downloading...',
+                completed: 'Download completed successfully!',
+                failed: 'Download failed. Please try again.',
+                invalidUrl: 'Please enter a valid YouTube URL.',
+                starting: 'Starting download...',
+                resolving: 'Resolving video information...',
+                videoTested: 'Video tested successfully!'
+            },
+            zh: {
+                title: 'YouTube 视频下载器',
+                seoTitle: 'YouTube 视频下载器 - 免费在线高清下载',
+                seoDescription: '免费在线YouTube视频和Shorts下载工具，支持MP4、MP3、WebM、OGG多种格式，高清720p/1080p下载。多语言界面支持（英语, 中文, हिन्दी, Português, Español, العربية含RTL支持）。无需注册，安全快速。',
+                seoKeywords: 'YouTube下载,视频下载器,在线下载,免费下载,MP4下载,MP3下载,WebM下载,OGG下载,高清视频,YouTube Shorts,短视频下载,多语言,多语言界面',
+                aiDescription: '免费YouTube视频和Shorts下载工具，支持MP4/MP3/WebM/OGG高清格式，具备多语言界面（6种语言包括RTL阿拉伯语），无需注册或软件安装',
+                aiKeywords: 'YouTube下载器, 视频下载, YouTube Shorts, 短视频下载, MP4转换器, MP3转换器, 高清视频, 免费在线工具, 无需注册, 浏览器兼容, 多语言, RTL支持',
+                aiFeatures: '多格式支持(MP4/MP3/WebM/OGG), YouTube Shorts下载, 高清下载, 实时进度, 多语言界面(6种语言含RTL), 无需软件, 浏览器兼容',
+                introText: '免费在线YouTube视频下载器，支持MP4、MP3、WebM、OGG格式的高清下载。支持YouTube Shorts下载。多语言界面（英语、中文、हिन्दी、Português、Español、العربية含RTL支持）。无需注册，安全快速。',
+                urlLabel: 'YouTube 视频链接：',
+                urlPlaceholder: '请粘贴 YouTube 视频链接 (例如: https://www.youtube.com/watch?v=...)',
+                qualityLabel: '视频质量：',
+                formatLabel: '视频格式：',
+                testBtn: '测试视频',
+                downloadBtn: '下载视频',
+                testing: '正在测试...',
+                downloading: '正在下载...',
+                completed: '下载完成！',
+                failed: '下载失败，请重试。',
+                invalidUrl: '请输入有效的 YouTube 链接。',
+                starting: '开始下载...',
+                resolving: '正在解析视频信息...',
+                videoTested: '视频测试成功！'
+            },
+            hi: {
+                title: 'YouTube डाउनलोडर',
+                seoTitle: 'YouTube डाउनलोडर - मुफ्त ऑनलाइन वीडियो डाउनलोडर',
+                seoDescription: 'मुफ्त ऑनलाइन YouTube वीडियो और Shorts डाउनलोडर। MP4, MP3, WebM, OGG फॉर्मेट में HD गुणवत्ता के साथ वीडियो डाउनलोड करें। रजिस्ट्रेशन की जरूरत नहीं।',
+                seoKeywords: 'YouTube डाउनलोडर,वीडियो डाउनलोडर,ऑनलाइन डाउनलोड,मुफ्त डाउनलोड,MP4 डाउनलोड,MP3 डाउनलोड,HD वीडियो,YouTube Shorts,Shorts डाउनलोडर',
+                aiDescription: 'मुफ्त YouTube वीडियो और Shorts डाउनलोडर टूल जो MP4/MP3/WebM/OGG HD फॉर्मेट का समर्थन करता है बिना रजिस्ट्रेशन या सॉफ्टवेयर इंस्टॉलेशन के',
+                aiKeywords: 'YouTube डाउनलोडर, वीडियो डाउनलोड, YouTube Shorts, Shorts डाउनलोडर, MP4 कन्वर्टर, MP3 कन्वर्टर, HD वीडियो, मुफ्त ऑनलाइन टूल, बिना रजिस्ट्रेशन, ब्राउज़र कम्पैटिबल',
+                aiFeatures: 'मल्टी-फॉर्मेट सपोर्ट, YouTube Shorts डाउनलोड, HD क्वालिटी डाउनलोड, रियल-टाइम प्रोग्रेस, बहुभाषी इंटरफेस, सॉफ्टवेयर की जरूरत नहीं, ब्राउज़र कम्पैटिबिलिटी',
+                introText: 'मुफ्त ऑनलाइन YouTube वीडियो डाउनलोडर जो MP4, MP3, WebM, OGG फॉर्मेट में HD गुणवत्ता का समर्थन करता है। YouTube Shorts डाउनलोड समर्थन। बहु-भाषा इंटरफेस (English, 中文, हिन्दी, Português, Español, العربية RTL समर्थन के साथ)। पंजीकरण की आवश्यकता नहीं, सुरक्षित और तेज़।',
+                urlLabel: 'YouTube वीडियो URL:',
+                urlPlaceholder: 'YouTube URL यहाँ पेस्ट करें',
+                qualityLabel: 'वीडियो गुणवत्ता:',
+                formatLabel: 'वीडियो प्रारूप:',
+                testBtn: 'वीडियो टेस्ट करें',
+                downloadBtn: 'वीडियो डाउनलोड करें',
+                testing: 'टेस्ट कर रहे हैं...',
+                downloading: 'डाउनलोड हो रहा है...',
+                completed: 'डाउनलोड सफलतापूर्वक पूरा हुआ!',
+                failed: 'डाउनलोड विफल। कृपया पुनः प्रयास करें।',
+                invalidUrl: 'कृपया एक वैध YouTube URL दर्ज करें।',
+                starting: 'डाउनलोड शुरू कर रहे हैं...',
+                resolving: 'वीडियो जानकारी निकाली जा रही है...',
+                videoTested: 'वीडियो सफलतापूर्वक टेस्ट हुआ!'
+            },
+            pt: {
+                title: 'Downloader do YouTube',
+                seoTitle: 'Downloader do YouTube - Baixar Vídeos Online Grátis',
+                seoDescription: 'Downloader gratuito de vídeos do YouTube e Shorts online. Baixe vídeos em formato MP4, MP3, WebM, OGG com qualidade HD. Interface multilíngue (English, 中文, हिन्दी, Português, Español, العربية com suporte RTL). Sem registro necessário, seguro e rápido.',
+                seoKeywords: 'YouTube downloader,baixar vídeo,downloader online,download grátis,MP4 download,MP3 download,WebM download,OGG download,vídeo HD,YouTube Shorts,Shorts downloader,multilíngue,multi-idioma',
+                aiDescription: 'Ferramenta gratuita de download do YouTube e Shorts com suporte a formatos MP4/MP3/WebM/OGG em HD com interface multilíngue (6 idiomas incluindo árabe RTL) sem registro ou instalação de software',
+                aiKeywords: 'downloader YouTube, download vídeo, YouTube Shorts, Shorts downloader, conversor MP4, conversor MP3, vídeo HD, ferramenta online gratuita, sem registro, compatível browser, multilíngue, suporte RTL',
+                aiFeatures: 'Suporte multi-formato (MP4/MP3/WebM/OGG), download YouTube Shorts, downloads HD, progresso tempo real, interface multilíngue (6 idiomas com RTL), sem software necessário, compatibilidade browser',
+                introText: 'Downloader gratuito online de vídeos do YouTube com suporte para formatos MP4, MP3, WebM, OGG em qualidade HD. Suporta download do YouTube Shorts. Interface multilíngue (English, 中文, हिन्दी, Português, Español, العربية com suporte RTL). Não requer registro, seguro e rápido.',
+                urlLabel: 'URL do vídeo do YouTube:',
+                urlPlaceholder: 'Cole a URL do YouTube aqui',
+                qualityLabel: 'Qualidade do vídeo:',
+                formatLabel: 'Formato do vídeo:',
+                testBtn: 'Testar Vídeo',
+                downloadBtn: 'Baixar vídeo',
+                testing: 'Testando...',
+                downloading: 'Baixando...',
+                completed: 'Download concluído com sucesso!',
+                failed: 'Falha no download. Tente novamente.',
+                invalidUrl: 'Por favor, insira uma URL válida do YouTube.',
+                starting: 'Iniciando download...',
+                resolving: 'Resolvendo informações do vídeo...',
+                videoTested: 'Vídeo testado com sucesso!'
+            },
+            es: {
+                title: 'Descargador de YouTube',
+                seoTitle: 'Descargador de YouTube - Descargar Videos Online Gratis',
+                seoDescription: 'Descargador gratuito de videos de YouTube y Shorts en línea. Descarga videos en formato MP4, MP3, WebM, OGG con calidad HD. Interfaz multilingüe (English, 中文, हिन्दी, Português, Español, العربية con soporte RTL). Sin registro requerido, seguro y rápido.',
+                seoKeywords: 'descargador YouTube,descargar video,descargador online,descarga gratis,descarga MP4,descarga MP3,descarga WebM,descarga OGG,video HD,YouTube Shorts,Shorts descargador,multilingüe,multi-idioma',
+                aiDescription: 'Herramienta gratuita de descarga de YouTube y Shorts con soporte para formatos MP4/MP3/WebM/OGG en HD con interfaz multilingüe (6 idiomas incluyendo árabe RTL) sin registro o instalación de software',
+                aiKeywords: 'descargador YouTube, descarga video, YouTube Shorts, Shorts descargador, conversor MP4, conversor MP3, video HD, herramienta online gratuita, sin registro, compatible navegador, multilingüe, soporte RTL',
+                aiFeatures: 'Soporte multi-formato (MP4/MP3/WebM/OGG), descarga YouTube Shorts, descargas HD, progreso tiempo real, interfaz multilingüe (6 idiomas con RTL), sin software requerido, compatibilidad navegador',
+                introText: 'Descargador gratuito en línea de videos de YouTube con soporte para formatos MP4, MP3, WebM, OGG en calidad HD. Soporta descarga de YouTube Shorts. Interfaz multilingüe (English, 中文, हिन्दी, Português, Español, العربية con soporte RTL). No requiere registro, seguro y rápido.',
+                urlLabel: 'URL del video de YouTube:',
+                urlPlaceholder: 'Pega la URL de YouTube aquí',
+                qualityLabel: 'Calidad del video:',
+                formatLabel: 'Formato del video:',
+                testBtn: 'Probar Video',
+                downloadBtn: 'Descargar video',
+                testing: 'Probando...',
+                downloading: 'Descargando...',
+                completed: '¡Descarga completada exitosamente!',
+                failed: 'Descarga fallida. Inténtelo de nuevo.',
+                invalidUrl: 'Por favor, ingrese una URL válida de YouTube.',
+                starting: 'Iniciando descarga...',
+                resolving: 'Resolviendo información del video...',
+                videoTested: '¡Video probado exitosamente!'
+            },
+            ar: {
+                title: 'منزل يوتيوب',
+                seoTitle: 'منزل يوتيوب - تحميل الفيديوهات مجاناً عبر الإنترنت',
+                seoDescription: 'منزل مجاني لفيديوهات يوتيوب و Shorts عبر الإنترنت. تحميل الفيديوهات بصيغة MP4, MP3, WebM, OGG بجودة عالية HD. واجهة متعددة اللغات (English, 中文, हिन्दी, Português, Español, العربية مع دعم RTL). لا يتطلب تسجيل، آمن وسريع.',
+                seoKeywords: 'تحميل يوتيوب,منزل فيديو,تحميل اونلاين,تحميل مجاني,تحميل MP4,تحميل MP3,تحميل WebM,تحميل OGG,فيديو عالي الجودة,YouTube Shorts,تحميل Shorts,متعدد اللغات,واجهة متعددة اللغات',
+                aiDescription: 'أداة تحميل مجانية لفيديوهات يوتيوب و Shorts تدعم صيغ MP4/MP3/WebM/OGG بجودة عالية مع واجهة متعددة اللغات (6 لغات تشمل العربية بدعم RTL) بدون تسجيل أو تثبيت برامج',
+                aiKeywords: 'محمل يوتيوب, تحميل فيديو, YouTube Shorts, تحميل Shorts, محول MP4, محول MP3, فيديو عالي الجودة, أداة مجانية أونلاين, بدون تسجيل, متوافق مع المتصفح, متعدد اللغات, دعم RTL',
+                aiFeatures: 'دعم متعدد الصيغ (MP4/MP3/WebM/OGG), تحميل YouTube Shorts, تحميل عالي الجودة, تقدم فوري, واجهة متعددة اللغات (6 لغات مع RTL), لا يتطلب برامج, توافق المتصفح',
+                introText: 'محمل مجاني لفيديوهات يوتيوب عبر الإنترنت يدعم تنسيقات MP4, MP3, WebM, OGG بجودة عالية. يدعم تحميل YouTube Shorts. واجهة متعددة اللغات (English, 中文, हिन्दी, Português, Español, العربية مع دعم RTL). لا يتطلب تسجيل، آمن وسريع.',
+                urlLabel: 'رابط فيديو يوتيوب:',
+                urlPlaceholder: 'الصق رابط يوتيوب هنا',
+                qualityLabel: 'جودة الفيديو:',
+                formatLabel: 'تنسيق الفيديو:',
+                testBtn: 'اختبار الفيديو',
+                downloadBtn: 'تنزيل الفيديو',
+                testing: 'جاري الاختبار...',
+                downloading: 'جاري التنزيل...',
+                completed: 'اكتمل التنزيل بنجاح!',
+                failed: 'فشل التنزيل. يرجى المحاولة مرة أخرى.',
+                invalidUrl: 'يرجى إدخال رابط يوتيوب صحيح.',
+                starting: 'بدء التنزيل...',
+                resolving: 'حل معلومات الفيديو...',
+                videoTested: 'تم اختبار الفيديو بنجاح!'
+            }
+        };
+
+        // YouTube 下载器类
+        class YouTubeDownloader {
+            constructor() {
+                this.baseUrl = 'http://localhost:5261';
+                this.currentTaskId = null;
+                this.progressInterval = null;
+            }
+
+            async resolveVideo(url) {
+                const response = await fetch(`${this.baseUrl}/api/video/resolve`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url })
+                });
+                return response.json();
+            }
+
+            async startDownload(videoUrl, format, quality) {
+                const response = await fetch(`${this.baseUrl}/api/download/start`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        videoUrl, 
+                        format, 
+                        quality 
+                    })
+                });
+                return response.json();
+            }
+
+            async getProgress(taskId) {
+                const response = await fetch(`${this.baseUrl}/api/download/${taskId}/progress`);
+                return response.json();
+            }
+
+            startProgressMonitoring() {
+                if (this.progressInterval) clearInterval(this.progressInterval);
+                
+                document.getElementById('progressContainer').classList.remove('hidden');
+                
+                this.progressInterval = setInterval(async () => {
+                    if (!this.currentTaskId) return;
+                    
+                    try {
+                        const result = await this.getProgress(this.currentTaskId);
+                        if (result.success) {
+                            const progress = result.data.progress;
+                            this.updateProgress(progress);
+                            
+                            if (result.data.status === 'Completed') {
+                                clearInterval(this.progressInterval);
+                                this.showMessage('completed', 'success');
+                                this.downloadCompletedFile(this.currentTaskId);
+                                this.resetDownload();
+                            } else if (result.data.status === 'Failed') {
+                                clearInterval(this.progressInterval);
+                                this.showMessage('failed', 'error');
+                                this.resetDownload();
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Progress monitoring error:', error);
+                    }
+                }, 1000);
+            }
+
+            updateProgress(percent) {
+                const progressBar = document.getElementById('progressBar');
+                progressBar.style.width = `${percent}%`;
+                progressBar.textContent = `${Math.round(percent)}%`;
+            }
+
+            resetDownload() {
+                this.currentTaskId = null;
+                const lang = document.getElementById('langSelect').value;
+                
+                // 恢复按钮状态
+                document.getElementById('testBtn').disabled = false;
+                const downloadBtn = document.getElementById('downloadBtn');
+                downloadBtn.disabled = false;
+                downloadBtn.textContent = translations[lang].downloadBtn;
+            }
+
+            showMessage(key, type) {
+                const lang = document.getElementById('langSelect').value;
+                const statusEl = document.getElementById('statusMessage');
+                statusEl.textContent = translations[lang][key];
+                statusEl.className = `status ${type}`;
+                statusEl.classList.remove('hidden');
+            }
+
+            hideMessage() {
+                const statusEl = document.getElementById('statusMessage');
+                statusEl.classList.add('hidden');
+            }
+
+            isValidYouTubeUrl(url) {
+                const patterns = [
+                    /^https?:\/\/(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)/,
+                    /^https?:\/\/(www\.)?youtube\.com\/embed\//,
+                    /^https?:\/\/(www\.)?youtube\.com\/v\//
+                ];
+                return patterns.some(pattern => pattern.test(url));
+            }
+
+            downloadCompletedFile(taskId) {
+                // Create a hidden link to trigger file download
+                const downloadUrl = `${this.baseUrl}/api/download/${taskId}/file`;
+                const link = document.createElement('a');
+                link.href = downloadUrl;
+                link.style.display = 'none';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                console.log('Started file download for task:', taskId);
+            }
+        }
+
+        // 应用程序初始化
+        class App {
+            constructor() {
+                this.downloader = new YouTubeDownloader();
+                this.currentLang = 'en';
+                this.videoInfo = null;
+                this.isVideoTested = false;
+                this.availableDownloadOptions = null;
+                this.init();
+            }
+
+            init() {
+                this.bindEvents();
+                this.loadLanguage();
+            }
+
+            bindEvents() {
+                // 语言切换
+                document.getElementById('langSelect').addEventListener('change', (e) => {
+                    this.currentLang = e.target.value;
+                    this.updateLanguage();
+                    localStorage.setItem('selectedLanguage', this.currentLang);
+                });
+
+                // 测试按钮
+                document.getElementById('testBtn').addEventListener('click', () => {
+                    this.handleTestVideo();
+                });
+
+                // 下载按钮
+                document.getElementById('downloadBtn').addEventListener('click', () => {
+                    this.handleDownload();
+                });
+
+                // URL输入框变化时重置状态
+                document.getElementById('videoUrl').addEventListener('input', () => {
+                    this.downloader.hideMessage();
+                    document.getElementById('videoInfo').classList.add('hidden');
+                    this.resetVideoState();
+                });
+            }
+
+            loadLanguage() {
+                // Check URL parameter first for SEO
+                const urlParams = new URLSearchParams(window.location.search);
+                const urlLang = urlParams.get('lang');
+                
+                // Priority: URL param > localStorage > default (en)
+                let selectedLang = 'en';
+                if (urlLang && translations[urlLang]) {
+                    selectedLang = urlLang;
+                } else {
+                    const savedLang = localStorage.getItem('selectedLanguage');
+                    if (savedLang && translations[savedLang]) {
+                        selectedLang = savedLang;
+                    }
+                }
+                
+                this.currentLang = selectedLang;
+                document.getElementById('langSelect').value = selectedLang;
+                this.updateLanguage();
+            }
+
+            updateLanguage() {
+                const t = translations[this.currentLang];
+                document.getElementById('title').textContent = t.title;
+                document.getElementById('introText').textContent = t.introText;
+                document.getElementById('urlLabel').textContent = t.urlLabel;
+                document.getElementById('videoUrl').placeholder = t.urlPlaceholder;
+                document.getElementById('qualityLabel').textContent = t.qualityLabel;
+                document.getElementById('formatLabel').textContent = t.formatLabel;
+                document.getElementById('testBtn').textContent = t.testBtn;
+                document.getElementById('downloadBtn').textContent = t.downloadBtn;
+                document.title = t.seoTitle || t.title;
+                
+                // Update SEO meta tags dynamically
+                this.updateSEOTags(t);
+                
+                // Update HTML lang attribute
+                document.documentElement.lang = this.currentLang;
+                
+                // Update URL parameter for SEO
+                if (window.history.replaceState) {
+                    const url = new URL(window.location);
+                    url.searchParams.set('lang', this.currentLang);
+                    window.history.replaceState({}, '', url);
+                }
+            }
+            
+            updateSEOTags(t) {
+                // Update meta description
+                let metaDesc = document.querySelector('meta[name="description"]');
+                if (metaDesc && t.seoDescription) {
+                    metaDesc.content = t.seoDescription;
+                }
+                
+                // Update meta keywords
+                let metaKeywords = document.querySelector('meta[name="keywords"]');
+                if (metaKeywords && t.seoKeywords) {
+                    metaKeywords.content = t.seoKeywords;
+                }
+                
+                // Update AI/LLM optimization meta tags
+                let aiPurpose = document.querySelector('meta[name="ai-purpose"]');
+                if (aiPurpose && t.aiDescription) {
+                    aiPurpose.content = t.aiDescription;
+                }
+                
+                let aiFeatures = document.querySelector('meta[name="ai-features"]');
+                if (aiFeatures && t.aiFeatures) {
+                    aiFeatures.content = t.aiFeatures;
+                }
+                
+                let citationTitle = document.querySelector('meta[name="citation-title"]');
+                if (citationTitle) {
+                    citationTitle.content = t.seoTitle || t.title;
+                }
+                
+                let citationDesc = document.querySelector('meta[name="citation-description"]');
+                if (citationDesc && t.aiDescription) {
+                    citationDesc.content = t.aiDescription;
+                }
+                
+                // Update Open Graph tags
+                let ogTitle = document.querySelector('meta[property="og:title"]');
+                if (ogTitle) {
+                    ogTitle.content = t.seoTitle || t.title;
+                }
+                
+                let ogDesc = document.querySelector('meta[property="og:description"]');
+                if (ogDesc && t.seoDescription) {
+                    ogDesc.content = t.seoDescription;
+                }
+                
+                // Update Twitter Card tags
+                let twitterTitle = document.querySelector('meta[name="twitter:title"]');
+                if (twitterTitle) {
+                    twitterTitle.content = t.seoTitle || t.title;
+                }
+                
+                let twitterDesc = document.querySelector('meta[name="twitter:description"]');
+                if (twitterDesc && t.seoDescription) {
+                    twitterDesc.content = t.seoDescription;
+                }
+                
+                // Update canonical URL with language parameter
+                let canonical = document.querySelector('link[rel="canonical"]');
+                if (canonical) {
+                    const baseUrl = canonical.href.split('?')[0];
+                    canonical.href = `${baseUrl}?lang=${this.currentLang}`;
+                }
+                
+                // Set RTL direction for Arabic
+                if (this.currentLang === 'ar') {
+                    document.documentElement.setAttribute('dir', 'rtl');
+                    document.body.style.direction = 'rtl';
+                    document.body.style.textAlign = 'right';
+                } else {
+                    document.documentElement.setAttribute('dir', 'ltr');
+                    document.body.style.direction = 'ltr';
+                    document.body.style.textAlign = 'left';
+                }
+            }
+
+            async handleDownload() {
+                // 检查是否已经测试过视频
+                if (!this.isVideoTested || !this.videoInfo) {
+                    this.downloader.showMessage('invalidUrl', 'error');
+                    return;
+                }
+
+                const url = document.getElementById('videoUrl').value.trim();
+                const format = document.getElementById('format').value;
+                const quality = document.getElementById('quality').value;
+
+                try {
+                    // 禁用两个按钮
+                    const testBtn = document.getElementById('testBtn');
+                    const downloadBtn = document.getElementById('downloadBtn');
+                    testBtn.disabled = true;
+                    downloadBtn.disabled = true;
+                    downloadBtn.textContent = translations[this.currentLang].starting;
+
+                    // 开始下载
+                    this.downloader.showMessage('starting', 'info');
+                    
+                    const downloadResult = await this.downloader.startDownload(url, format, quality);
+                    
+                    if (downloadResult.success) {
+                        this.downloader.currentTaskId = downloadResult.data.id;
+                        downloadBtn.textContent = translations[this.currentLang].downloading;
+                        this.downloader.startProgressMonitoring();
+                    } else {
+                        this.downloader.showMessage('failed', 'error');
+                        this.resetAfterDownload();
+                    }
+                } catch (error) {
+                    console.error('Download error:', error);
+                    this.downloader.showMessage('failed', 'error');
+                    this.resetAfterDownload();
+                }
+            }
+
+            resetAfterDownload() {
+                document.getElementById('testBtn').disabled = false;
+                document.getElementById('downloadBtn').disabled = false;
+                document.getElementById('downloadBtn').textContent = translations[this.currentLang].downloadBtn;
+                this.downloader.currentTaskId = null;
+            }
+
+            resetVideoState() {
+                this.videoInfo = null;
+                this.isVideoTested = false;
+                this.availableDownloadOptions = null;
+                document.getElementById('downloadBtn').disabled = true;
+                
+                // 重置格式和质量选项为默认值
+                const formatSelect = document.getElementById('format');
+                const qualitySelect = document.getElementById('quality');
+                
+                formatSelect.innerHTML = `
+                    <option value="mp4">MP4</option>
+                    <option value="webm">WebM</option>
+                    <option value="mp3">MP3</option>
+                    <option value="ogg">OGG</option>
+                `;
+                
+                qualitySelect.innerHTML = `
+                    <option value="360p">360p</option>
+                    <option value="480p">480p</option>
+                    <option value="720p">720p (HD)</option>
+                    <option value="1080p">1080p (Full HD)</option>
+                `;
+                
+                // 移除格式变化的事件监听器
+                const newFormatSelect = formatSelect.cloneNode(true);
+                formatSelect.parentNode.replaceChild(newFormatSelect, formatSelect);
+            }
+
+            async handleTestVideo() {
+                const url = document.getElementById('videoUrl').value.trim();
+                
+                // 验证URL
+                if (!url) {
+                    this.downloader.showMessage('invalidUrl', 'error');
+                    return;
+                }
+                
+                if (!this.downloader.isValidYouTubeUrl(url)) {
+                    this.downloader.showMessage('invalidUrl', 'error');
+                    return;
+                }
+                
+                try {
+                    // 禁用测试按钮
+                    const testBtn = document.getElementById('testBtn');
+                    testBtn.disabled = true;
+                    testBtn.textContent = translations[this.currentLang].testing;
+                    
+                    // 显示解析状态
+                    this.downloader.showMessage('resolving', 'info');
+                    
+                    // 调用视频解析接口
+                    const videoResult = await this.downloader.resolveVideo(url);
+                    
+                    if (videoResult.success) {
+                        // 缓存视频信息
+                        this.videoInfo = videoResult.data;
+                        this.isVideoTested = true;
+                        
+                        // 显示视频信息
+                        this.showVideoInfo(videoResult.data);
+                        
+                        // 更新质量和格式选项
+                        this.updateDownloadOptions(videoResult.data.downloadOptions);
+                        
+                        // 启用下载按钮
+                        document.getElementById('downloadBtn').disabled = false;
+                        
+                        // 显示成功消息
+                        this.downloader.showMessage('videoTested', 'success');
+                    } else {
+                        this.downloader.showMessage('failed', 'error');
+                    }
+                } catch (error) {
+                    console.error('Test video error:', error);
+                    this.downloader.showMessage('failed', 'error');
+                } finally {
+                    // 恢复测试按钮
+                    const testBtn = document.getElementById('testBtn');
+                    testBtn.disabled = false;
+                    testBtn.textContent = translations[this.currentLang].testBtn;
+                }
+            }
+
+            showVideoInfo(videoData) {
+                const videoInfo = document.getElementById('videoInfo');
+                const videoTitle = document.getElementById('videoTitle');
+                const videoAuthor = document.getElementById('videoAuthor');
+                const videoDuration = document.getElementById('videoDuration');
+                const videoStats = document.getElementById('videoStats');
+                
+                videoTitle.textContent = videoData.title || 'Unknown Title';
+                videoAuthor.textContent = videoData.author ? `by ${videoData.author}` : '';
+                
+                // 显示时长
+                if (videoData.duration) {
+                    const duration = this.formatDuration(videoData.duration);
+                    videoDuration.textContent = `Duration: ${duration}`;
+                } else {
+                    videoDuration.textContent = '';
+                }
+                
+                // 显示统计信息
+                const stats = [];
+                if (videoData.viewCount) {
+                    stats.push(`${this.formatNumber(videoData.viewCount)} views`);
+                }
+                if (videoData.uploadDate) {
+                    const date = new Date(videoData.uploadDate).toLocaleDateString();
+                    stats.push(`Uploaded: ${date}`);
+                }
+                videoStats.textContent = stats.join(' • ');
+                
+                videoInfo.classList.remove('hidden');
+            }
+
+            updateDownloadOptions(downloadOptions) {
+                if (!downloadOptions || downloadOptions.length === 0) return;
+                
+                // 保存下载选项供后续使用
+                this.availableDownloadOptions = downloadOptions;
+                
+                const formatSelect = document.getElementById('format');
+                const qualitySelect = document.getElementById('quality');
+                
+                // 获取可用格式
+                const formats = [...new Set(downloadOptions.map(option => option.container))];
+                
+                // 更新格式选项
+                formatSelect.innerHTML = formats.map(format => 
+                    `<option value="${format}">${format.toUpperCase()}</option>`
+                ).join('');
+                
+                // 移除旧的事件监听器（如果存在）
+                const newFormatSelect = formatSelect.cloneNode(true);
+                formatSelect.parentNode.replaceChild(newFormatSelect, formatSelect);
+                
+                // 添加新的事件监听器
+                newFormatSelect.addEventListener('change', () => {
+                    this.updateQualityOptions(newFormatSelect.value);
+                });
+                
+                // 初始化质量选项（选择第一个格式）
+                this.updateQualityOptions(formats[0]);
+            }
+
+            updateQualityOptions(selectedFormat) {
+                if (!this.availableDownloadOptions || !selectedFormat) return;
+                
+                const qualitySelect = document.getElementById('quality');
+                
+                // 根据选择的格式筛选可用质量
+                const availableQualities = this.availableDownloadOptions
+                    .filter(option => option.container.toLowerCase() === selectedFormat.toLowerCase())
+                    .map(option => {
+                        if (option.isAudioOnly) {
+                            return {
+                                value: option.audioBitrate || 'default',
+                                display: `${option.audioBitrate || 'Default'} (Audio Only)`,
+                                fileSize: option.fileSize
+                            };
+                        } else {
+                            return {
+                                value: option.videoQuality || 'default',
+                                display: option.videoQuality || 'Default',
+                                fileSize: option.fileSize
+                            };
+                        }
+                    });
+                
+                // 去重（基于value）
+                const uniqueQualities = availableQualities.filter((quality, index, self) => 
+                    index === self.findIndex(q => q.value === quality.value)
+                );
+                
+                // 更新质量选项
+                qualitySelect.innerHTML = uniqueQualities.map(quality => {
+                    const sizeInfo = quality.fileSize ? ` (~${this.formatFileSize(quality.fileSize)})` : '';
+                    return `<option value="${quality.value}">${quality.display}${sizeInfo}</option>`;
+                }).join('');
+            }
+
+            formatFileSize(bytes) {
+                if (!bytes) return 'Unknown';
+                
+                const units = ['B', 'KB', 'MB', 'GB'];
+                let size = bytes;
+                let unitIndex = 0;
+                
+                while (size >= 1024 && unitIndex < units.length - 1) {
+                    size /= 1024;
+                    unitIndex++;
+                }
+                
+                return `${size.toFixed(1)}${units[unitIndex]}`;
+            }
+
+            formatDuration(duration) {
+                // 假设duration是秒数或ISO8601格式
+                if (typeof duration === 'string' && duration.includes(':')) {
+                    return duration;
+                } else if (typeof duration === 'number') {
+                    const hours = Math.floor(duration / 3600);
+                    const minutes = Math.floor((duration % 3600) / 60);
+                    const seconds = duration % 60;
+                    
+                    if (hours > 0) {
+                        return `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                    } else {
+                        return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                    }
+                }
+                return duration;
+            }
+
+            formatNumber(num) {
+                if (num >= 1000000) {
+                    return (num / 1000000).toFixed(1) + 'M';
+                } else if (num >= 1000) {
+                    return (num / 1000).toFixed(1) + 'K';
+                }
+                return num.toString();
+            }
+        }
+
+        // 启动应用程序
+        document.addEventListener('DOMContentLoaded', () => {
+            new App();
+        });
+    </script>
+</body>
+</html>

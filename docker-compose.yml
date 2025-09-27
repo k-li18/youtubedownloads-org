@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  # Web API Application
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: youtube-downloader-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - DownloadSettings__DefaultOutputPath=/app/downloads
+      - DownloadSettings__MaxConcurrentDownloads=3
+      - Logging__LogLevel__Default=Information
+      - Serilog__MinimumLevel__Default=Information
+    ports:
+      - "8080:8080"
+    volumes:
+      - downloads:/app/downloads
+      - logs:/app/logs
+    networks:
+      - youtube-downloader-network
+    healthcheck:
+      # Use curl with fail-fast, silent, timeout and retry to improve robustness
+      test: ["CMD-SHELL", "curl -fsS --max-time 5 http://localhost:8080/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy (optional, for production)
+  nginx:
+    image: nginx:alpine
+    container_name: youtube-downloader-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - api
+    networks:
+      - youtube-downloader-network
+    restart: unless-stopped
+
+volumes:
+  downloads:
+    driver: local
+  logs:
+    driver: local
+
+networks:
+  youtube-downloader-network:
+    driver: bridge

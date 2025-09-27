@@ -1,0 +1,71 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.claude/
+Disallow: /.playwright-mcp/
+Disallow: /downloads/
+
+# Sitemap location
+Sitemap: https://youtubedownloads.org/sitemap.xml
+
+# LLM/AI Optimization
+# AI-readable content and information
+Allow: /llms.txt
+# Allow API documentation for LLM understanding (if exists)
+Allow: /api-docs
+Allow: /swagger
+Allow: /openapi.json
+
+# AI/LLM Specific Bot Rules
+# ChatGPT and OpenAI crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Crawl-delay: 1
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+
+# Claude AI (Anthropic)
+User-agent: Claude-Web
+Allow: /
+Allow: /llms.txt
+Crawl-delay: 1
+
+# Bard/Gemini (Google AI)
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+Crawl-delay: 1
+
+# Bing AI/Copilot
+User-agent: CCBot
+Allow: /
+Allow: /llms.txt
+Crawl-delay: 1
+
+# General AI training crawlers
+User-agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /
+Allow: /llms.txt
+
+# Traditional Search Engine Bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Crawl-delay for polite crawling (default)
+Crawl-delay: 1

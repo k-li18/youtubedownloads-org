@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database for development
+  postgres-dev:
+    image: postgres:16-alpine
+    container_name: youtube-downloader-db-dev
+    environment:
+      POSTGRES_DB: youtubedownloader_dev
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"  # Different port to avoid conflicts
+    networks:
+      - youtube-downloader-dev-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis for development
+  redis-dev:
+    image: redis:7-alpine
+    container_name: youtube-downloader-redis-dev
+    ports:
+      - "6380:6379"  # Different port to avoid conflicts
+    networks:
+      - youtube-downloader-dev-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  postgres_dev_data:
+    driver: local
+
+networks:
+  youtube-downloader-dev-network:
+    driver: bridge

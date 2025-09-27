@@ -1,0 +1,13 @@
+{
+  "name": "youtube-downloader-web",
+  "version": "1.0.0",
+  "description": "一个强大的YouTube视频下载Web API，基于.NET 9.0 + ASP.NET Core开发，支持实时进度追踪、后台任务队列、多格式下载等特性。",
+  "main": "playwright-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
