@@ -110,9 +110,9 @@ public class BackgroundDownloadService : IBackgroundDownloadService
             downloadTask.Progress = 100;
 
             // Get file size
-            if (File.Exists(downloadTask.OutputPath))
+            if (File.Exists(fullFilePath))
             {
-                downloadTask.FileSizeBytes = new FileInfo(downloadTask.OutputPath).Length;
+                downloadTask.FileSizeBytes = new FileInfo(fullFilePath).Length;
             }
 
             await _downloadTaskRepository.UpdateAsync(downloadTask, cancellationToken);
